@@ -1,5 +1,4 @@
-
-import React, { useState, useCallback, useEffect } from 'react';
+import React, { useState, useCallback, useEffect } from 'https://esm.sh/react@^19.1.1';
 import type { ImageFile } from '../types';
 
 interface ImageUploaderProps {
@@ -20,7 +19,7 @@ const ImageUploader: React.FC<ImageUploaderProps> = ({ onFilesSelect, onClear })
 
   const handleFileChange = (e: React.ChangeEvent<HTMLInputElement>) => {
     if (e.target.files) {
-      const files = Array.from(e.target.files);
+      const files = Array.from(e.target.files) as File[];
       const newImageFiles = files.map(file => ({
         file,
         preview: URL.createObjectURL(file),
@@ -58,7 +57,7 @@ const ImageUploader: React.FC<ImageUploaderProps> = ({ onFilesSelect, onClear })
       e.stopPropagation();
       setIsDragging(false);
       
-      const files = Array.from(e.dataTransfer.files);
+      const files = Array.from(e.dataTransfer.files) as File[];
       const imageFilesOnly = files.filter(file => file.type.startsWith('image/'));
       if (imageFilesOnly.length > 0) {
         const newImageFiles = imageFilesOnly.map(file => ({

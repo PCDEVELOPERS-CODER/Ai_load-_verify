@@ -1,4 +1,4 @@
-import { GoogleGenAI, Type } from "@google/genai";
+import { GoogleGenAI, Type } from "https://esm.sh/@google/genai@^1.15.0";
 import type { VerificationResult } from '../types';
 
 const API_KEY = process.env.API_KEY;

@@ -1,5 +1,4 @@
-
-import React from 'react';
+import React from 'https://esm.sh/react@^19.1.1';
 
 const CrossIcon: React.FC<{ className?: string }> = ({ className = "h-6 w-6" }) => (
   <svg

@@ -1,5 +1,4 @@
-
-import React, { useState } from 'react';
+import React, { useState } from 'https://esm.sh/react@^19.1.1';
 import ImageUploader from './components/ImageUploader';
 import VerificationResults from './components/VerificationResults';
 import Spinner from './components/Spinner';
