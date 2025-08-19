@@ -1,5 +1,4 @@
 {
   "name": "Delivery Verification AI",
-  "description": "An AI-powered tool to automatically verify that a set of delivery photos meets all required criteria, including presence of the vehicle, loading/unloading stages, and necessary documents.",
-  "requestFramePermissions": []
+  "description": "An AI-powered tool to automatically verify that a set of delivery photos meets all required criteria, including presence of the vehicle, loading/unloading stages, and necessary documents."
 }
